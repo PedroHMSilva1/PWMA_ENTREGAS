@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    color: black;
+    text-align: center;
+
+}
+
+body {
+    font-family: 'Inclusive Sans', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+main {
+    padding: 30px 50px;
+    display: flex;
+
+}
+
+.content {
+    margin-top: 15px;
+
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #bbbbbb;
+    width: 95%;
+}
+
+table th {
+    background-color: #ccc;
+}
+
+.center {
+    text-align: center;
+}
