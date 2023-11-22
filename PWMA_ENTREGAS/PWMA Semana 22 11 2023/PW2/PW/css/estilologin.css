@@ -1,0 +1,54 @@
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+body a{
+    color: #000000;
+    text-decoration: none;
+    padding-left: 5px; 
+    font-weight: bold;
+
+}
+aside{
+    margin-bottom: 2px;
+    border-radius: 5px;
+    border: 4px;
+}
+button{
+    border: 0px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border-radius: 3pt;
+    font-weight: bolder;
+    transition: 0.3s;
+    margin-left: 7px;
+
+}
+button:hover{
+    background-color: orange;
+}
+.content {
+    margin-top: 15px;
+
+}
+
+ptable {
+    border-collapse: collapse;
+    border: 1px solid #bbbbbb;
+    width: 95%;
+}
+
+ptable th {
+    background-color: orangered;
+    color: #ccc;
+    transition: 0.3s;
+}
+ptable th:hover{
+    background-color: orange;
+}
+
+pontocenter {
+    text-align: center;
+}
