@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>LP GESTÃO FINANCEIRA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
+</head>
+<header>
+
+    <nav class="nav">
+
+        <ul class="nav-content">
+            <a class="logo" href="#">
+                <img src="img/logo.svg">
+                <h1>LP GESTÃO FINANCEIRA</h1>
+            </a>
+
+            <div class="loginrec">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" autocomplete="off">
+
+                <label for="password" class="sen">Senha</label>
+
+                <input type="password" id="password" autocomplete="off">
+
+                <button onclick="login.checar()" type="submit" value="Login" class="submit">Login</button>
+
+                <a href="Recuperacao.html" class="rec">Esqueceu a senha?</a>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+    <aside>
+        <h1>Por Que Escolher Nosso Trabalho</h1>
+        <p>
+            Nossa missão é tornar o gerenciamento financeiro acessível e descomplicado para todos. Não importa se você
+            está começando a investir, planejando sua aposentadoria ou tentando economizar para uma grande compra, nosso
+            site de gestão financeira está aqui para ajudar.
+            Com uma interface intuitiva, recursos robustos e uma equipe de especialistas em finanças à disposição, você
+            terá a tranquilidade de que está tomando as melhores decisões financeiras para o seu futuro.
+            Junte-se a nós hoje mesmo e comece a trilhar o caminho para uma vida financeira mais saudável e segura. Seu
+            futuro financeiro começa aqui, no "Finanças Simplificadas."
+        </p>
+    </aside>
+<main>
+
+
+    <body>
+        <div class="slider">
+            <div class="slides">
+                <!--radio Button-->
+                <input type="radio" name="radio-btn" id="radio1" onclick="resetTimer()">
+                <input type="radio" name="radio-btn" id="radio2" onclick="resetTimer()">
+                <input type="radio" name="radio-btn" id="radio3" onclick="resetTimer()">
+                <!--fim radio Button-->
+                <!--imagens-->
+                <div class="slide first">
+                    <img src="img/ai2.jfif" alt="Imagem1">
+                </div>
+                <div class="slide">
+                    <img src="img/ai3.jfif" alt="Imagem2">
+                </div>
+                <div class="slide">
+                    <img src="img/ai1.jfif"  alt="Imagem3">
+                </div>
+                <!--imagens-->
+                <!--NAV-->
+                <div class="Nav-auto">
+                    <div class="auto-btn1" ></div>
+                    <div class="auto-btn2" ></div>
+                    <div class="auto-btn3" ></div>
+                </div>
+
+                <!--<div class="manuel-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>-->
+                
+
+            </div>
+           
+        </div> 
+       
+        <div class="Funcio">
+            <h1>Controle completo das suas contas a pagar e receber</h1>
+            <section>
+                <p>Com o Controle, gerenciar contas a pagar e receber é simples e eficiente. Programe pagamentos,
+                    registre recebimentos, acompanhe vencimentos e mantenha suas finanças sempre em dia.</p>
+                <p>Garanta a precisão financeira com a nossa funcionalidade de conciliação bancária. Sincronize, compare
+                    transações e valide cada entrada e saída. Faça a verificação de inconsistências de forma eficiente e
+                    tenha sempre um controle financeiro preciso e confiável.</p>
+            </section>
+        </div>
+
+        <body>
+            <h5>Planos</h5>
+            <div class="wrapper">
+
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front" style="background-image: url(img/OIP.jpg)">
+                                <div class="inner">
+                                    <p>PLANO 1</p>
+                                    <span>Essencial</span>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="inner">
+                                    <ul>
+                                        <li>Implantação gratuita</li>
+                                        <li>Dashboard financeiro</li>
+                                        <li>Fluxo de caixa</li>
+                                        <li>Entradas x saídas</li>
+                                        <li>Suporte email</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container">
+                            <div class="front2" style="background-image: url(img/ooooo.jpg)">
+                                <div class="inner">
+                                    <p>PLANO 2</p>
+                                    <span>Premium</span>
+                                </div>
+                            </div>
+                            <div class="back2">
+                                <div class="inner">
+                                    <ul>
+                                        <li>Implantação gratuita</li>
+                                        <li>Dashboard financeiro</li>
+                                        <li> Fluxo de caixa</li>
+                                        <li> Entradas x saídas</li>
+                                        <li> Suporte email</li>
+                                        <li> Anexo de arquivos</li>
+                                        <li> Categorização</li>
+                                        <li> Auditoria</li>
+                                        <li> Relatórios personalizados</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="js/login.js"></script>
+                    <script src="js/index.js"></script>
+        </body>
+</main>
+
+
+<footer>
+    <div class="footer-item">
+        <div class="f1">
+        <h1 class="footer-title">Sobre Nós</h1>
+            <p>Site Idealizado Por :</p>
+            <p>Levi Freitas</p>
+            <p>Pedro Melo</p>
+            <a>Projeto Programação WEB 2º Semestre Senac</a>
+            <div class="footer3">
+                <img src="img/linkedin-svgrepo-com.svg">
+                <img src="img/twitter-svgrepo-com.svg">
+                <img src="img/instagram-svgrepo-com.svg">
+            </div>
+        </div>
+        <div class="footer2">
+            <h1 class="footer-title">Parceiros</h1>
+                <img src="img/ServDesk.PNG" height="50px" width="50px">
+                <img src="img/Jose.png" height="50px" width="50px">
+            </div>
+            
+    </div>
+
+</footer>
+
+</html>
