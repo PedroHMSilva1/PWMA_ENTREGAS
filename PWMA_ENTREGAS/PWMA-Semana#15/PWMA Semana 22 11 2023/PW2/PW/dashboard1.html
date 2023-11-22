@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/planos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="info-header">
+            <div class="icons-header">
+                <a class="logo1" href="#"></a>
+                <img src="img/logo.svg">
+            </div>
+            <div class="logo">
+                <h1>LP GESTÃO FINANCEIRA</h1>
+            </div>
+
+        </div>
+        <div class="icon-header">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" fill="#FFFFFF">
+                <path
+                    d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" fill="#FFFFFF">
+                <path
+                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+            </svg>
+            <img src="img/Jose.png">
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="sidebar">
+            <h3>Home</h3>
+            <a id="menu-link" href="#"><img src="img/security-safe-svgrepo-com.svg">Menu</a>
+            <a id="cotation-link" href="#"><img src="img/security-safe-svgrepo-com.svg">Cotação</a>
+            <br />
+        </div>
+
+        <div id="cotation-content">
+            <h2>Olá! Gestaurante</h2>
+                <br>
+                <hr>
+                <br>
+            
+            <h2>Cotação</h2>
+            <h1>Consulta de Ações</h1>
+            <h4>Melhores Opções do Mercado Atual</h4>
+            <br>
+
+            <label for="symbolInput">Símbolo da Ação:</label>
+            <input type="text" id="symbolInput" placeholder="Digite o símbolo da ação">
+            <button onclick="getStockData()">Consultar</button>
+            <br>
+            <div id="stockData">
+            </div>
+            <aside class="aside2">
+                <br>
+                <p>Apple Inc.: AAPL</p><br>
+                <p>Microsoft Corporation: MSFT</p><br>
+                <p>Alphabet Inc. (Google): GOOGL</p><br>
+                <p>Amazon.com Inc.: AMZN</p><br>
+                <p>Facebook Inc.: FB</p><br>
+                <p>Tesla Inc.: TSLA</p><br>
+                <p> IBM: IBM</p><br>
+                <p> Coca-Cola Company: KO</p><br>
+                <p>Procter & Gamble Co.: PG</p><br>
+                <p> Johnson & Johnson: JNJ</p><br>
+            </aside>
+        </div>
+
+
+        <div class="content">
+            <div class="titulo">
+                <h2>Olá! Gestaurante</h2>
+                <br>
+                <hr>
+                <br>
+                <span>
+                    <img src="img/house-wifi-svgrepo-com.svg">
+                    <p>Dashboard</p>
+                </span>
+
+                <div class="box-info">
+                    <div class="box-info-single" onclick="destruirGraficos(),mostrarConteudo('opcao6')">
+                        <div class="info-text">
+                            <h3>Mapa Financeiro</h3>
+                            <p>R$ 324.750</p>
+                            <img src="img/map-location-pin-svgrepo-com.svg">
+                        </div>
+                    </div>
+                    <div class="box-info-single" onclick="destruirGraficos(),mostrarConteudo('opcao2')">
+                        <div class="info-text">
+                            <h3>Despesas Operacionais</h3>
+                            <p>R$ 46.000</p>
+                            <img src="img/money-send-svgrepo-com.svg">
+                        </div>
+                    </div>
+                    <div class="box-info-single" onclick="destruirGraficos(),mostrarConteudo('opcao3')">
+                        <div class="info-text">
+                            <h3>Valor Investido</h3>
+                            <p>R$ 142.313</p>
+                            <img src="img/graphic-files-and-folders-svgrepo-com.svg">
+                        </div>
+                    </div>
+                    <div class="box-info-single" onclick="destruirGraficos(),mostrarConteudo('opcao4')">
+                        <div class="info-text">
+                            <h3>Receita Bruta</h3>
+                            <p>R$ 190.313</p>
+                            <img src="img/money-svgrepo-com.svg">
+                        </div>
+                    </div>
+                    <div class="box-info-single" onclick="destruirGraficos(),mostrarConteudo('opcao5')">
+                        <div class="info-text">
+                            <h3>Patrimonio</h3>
+                            <p>R$ 94.000</p>
+                            <img src="img/building-2-svgrepo-com.svg">
+                        </div>
+                    </div>
+                    <div class="box-info-single" onclick="destruirGraficos(),mostrarConteudo('opcao1')">
+                        <div class="info-text">
+                            <h3>Instituições Financeiras</h3>
+                            <p>R$ 151.000</p>
+                            <img src="img/banco.svg">
+                        </div>
+                    </div>
+
+                </div>
+                <aside class="aside">
+                    <div class="feed">
+                        <div class="feed-single">
+                            <div class="feed-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"
+                                    fill="#6983c9">
+                                    <path
+                                        d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+                                </svg>
+                                <span>Mudança nas Despesas Operacionais</span>
+                            </div>
+                            <div class="feed-time">
+                                <h4>Há 5 minutos atrás</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div class="feed">
+                        <div class="feed-single">
+                            <div class="feed-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"
+                                    fill="#6983c9">
+                                    <path
+                                        d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+                                </svg>
+                                <span>Verificação de E-Mail</span>
+                            </div>
+                            <div class="feed-time">
+                                <h4>Há 45 minutos atrás</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </aside>
+                <main>
+
+                    <div class="grafico">
+                        <div id="opcao1" class="canvas-container">
+                            <canvas class="opcao-container" id="grafico1"
+                                style="display: block; box-sizing: border-box; height: 850px; width: 850px;"
+                                width="850"></canvas>
+                        </div>
+                        <div id="opcao2" class="canvas-container">
+                            <canvas class="opcao-container" id="grafico2"></canvas>
+                        </div>
+                        <div id="opcao3" class="canvas-container">
+                            <canvas class="opcao-container" id="grafico3"
+                                style="box-sizing: border-box; height: 1250px; width: 1250px;" width="1250"></canvas>
+                        </div>
+                        <div id="opcao4" class="canvas-container">
+                            <canvas class="opcao-container" id="grafico4"></canvas>
+                        </div>
+                        <div id="opcao5" class="canvas-container">
+                            <canvas class="opcao-container" id="grafico5"></canvas>
+                        </div>
+                        <div id="opcao6" class="canvas-container">
+                            <canvas class="opcao-container" id="grafico6"
+                            style="display: block; box-sizing: border-box; height: 800px; width: 950px;"
+                                width="950"></canvas>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/grafico.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/side.js"></script>
+
+
+</body>
+
+</html>

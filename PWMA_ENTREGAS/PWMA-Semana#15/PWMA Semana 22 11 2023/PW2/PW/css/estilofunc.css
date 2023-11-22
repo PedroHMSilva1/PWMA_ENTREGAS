@@ -1,0 +1,21 @@
+head{
+    background-color: rgb(222, 222, 222);
+    width: 75%;
+    color: #000000;
+    display: grid;
+
+}
+
+
+body{
+    background-color: rgb(222, 222, 222);
+    width: 75%;
+    height: 500px;
+    color: #0d0d0d;
+    text-align: justify;
+}
+*{
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
